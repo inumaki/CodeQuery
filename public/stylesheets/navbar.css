@@ -1,0 +1,87 @@
+
+@import url("https://component-vishalg8454.netlify.app/components/main.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+
+  :root {
+    --navbg:#1D1F26;
+    --navlink:#E2FFAE;
+    --hovercol:#FF7B6C;
+    --logo:#00FFBF;
+
+  }
+
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+
+}
+
+
+.navmainbody
+{
+  
+display: flex;
+justify-content:space-between;
+
+background-color: var(--navbg);
+align-items: baseline;
+}
+a{
+    padding:5px;
+    color:var(--navlink);
+    margin-left:10px;
+    margin-right:10px;
+    font-size: 16px;
+    text-decoration:none;
+    font-weight: 500;
+}
+.register
+{
+justify-self: flex-end;
+
+}
+.login
+{
+    justify-self: flex-end;
+}
+.forum
+{
+color:var(--logo);
+font-weight: 700;
+padding:5px;
+margin-left:10px;
+margin-bottom: 0px;
+
+}
+a:hover
+{
+  color:var(--hovercol)
+}
+.avatar
+{
+  height: 25px;
+  width:25px;
+  color:black;
+  margin-right:20px;
+  background-color:var(--logo);
+}
+.homeandtitle
+{
+  display: flex;
+  align-items: baseline;
+}
+.avatar:hover
+{
+cursor: pointer;
+color:var(--hovercol);
+background-color:black;
+
+
+}

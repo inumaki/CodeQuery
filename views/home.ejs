@@ -1,0 +1,7 @@
+<%layout('layout/boilerplate')%>
+    <%if(currentuser){%>
+    <h1>Welcome <%=currentuser.username%> </h1>
+    <%} else{%>
+        <h1>welcome noobs</h1>
+    <%}%>
+
