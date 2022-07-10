@@ -29,7 +29,7 @@ body{
   
 display: flex;
 justify-content:space-between;
-
+letter-spacing: 0.05cm;
 background-color: var(--navbg);
 align-items: baseline;
 }
@@ -70,7 +70,7 @@ a:hover
   width:25px;
   color:black;
   margin-right:20px;
-  background-color:var(--logo);
+  background-color:var(--navlink);
 }
 .homeandtitle
 {
@@ -85,3 +85,53 @@ background-color:black;
 
 
 }
+.avatar:active
+{
+  color:var(--logo)
+}
+.miniwindow
+{
+  display: none;
+}
+
+.activestate
+{
+ font-weight: 300; 
+  padding: 5px;
+display: flex;
+flex-direction: column;
+position: absolute;
+align-items: center;
+top: 42px;
+right: 8px;
+color:white;
+background-color: black;
+border-radius: 15px;
+}
+.activestate p
+{
+  margin-bottom: 2px;
+  color:var(--logo);
+  max-width: 150px;
+}
+
+.ulist
+{
+  padding-left: 0;
+  margin:0px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+list-style: none;
+}
+.activestate hr{
+  margin:0;
+  border: 1px solid var(--logo);
+ width:90%;
+}
+.ulista
+{
+  margin:auto;
+}
+

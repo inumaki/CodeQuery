@@ -8,7 +8,6 @@ const isloggedin = (req,res,next)=>{
 req.session.storeUrl = req.originalUrl
 return res.redirect('/login')
     }
-    console.log(req.user)
 next();
 }
 

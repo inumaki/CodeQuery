@@ -37,7 +37,7 @@ const secret = 'thisismysecret'
 const router= require('router')
 const dburl=  'mongodb://localhost:27017/forum'
 const user_router= require('./routes/user')
-
+const list_router= require('./routes/list')
 //---------------------------------
 main().catch(err => console.log(err));
 //--------------------------------
@@ -78,7 +78,7 @@ app.listen(port,()=>{
 //---------------------------------------------------
 app.use((req,res,next)=>{
   res.locals.currentuser= req.user
-  console.log(req.user)
+
 next()
 })
 
@@ -91,6 +91,7 @@ next()
     }
 //----------------------------------------------------
 app.use("/",user_router)
+app.use("/mylist",list_router)
 //----------------------------------------------------
 app.get('/home',(req,res)=>{
     res.render('home.ejs');
